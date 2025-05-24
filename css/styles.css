@@ -90,4 +90,48 @@ footer {
     font-size: 1em;
     opacity: 0.80;
 }
+.research-intro {
+    background: rgba(32, 36, 65, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 2px 16px #090c1c88;
+    padding: 28px 24px 20px 24px;
+    margin: 34px auto 22px auto;
+    max-width: 650px;
+    color: #d3eafe;
+    font-size: 1.09em;
+    letter-spacing: 0.01em;
+}
+
+.research-intro h2, .research-intro h3 {
+    color: #ffe566;
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+}
+
+.research-intro ul {
+    margin-left: 24px;
+    margin-bottom: 18px;
+    color: #c6e7ff;
+}
+
+.research-intro ul li {
+    margin-bottom: 8px;
+}
+
+.research-intro a {
+    color: #78e7ff;
+    text-decoration: underline dotted;
+    transition: color 0.15s;
+}
+
+.research-intro a:hover {
+    color: #ffe566;
+}
+
+.research-intro em {
+    color: #ace8f9;
+}
+
 
