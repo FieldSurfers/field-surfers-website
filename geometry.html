@@ -82,6 +82,14 @@
             color: #ace8f9;
             font-size: 0.95em;
         }
+
+        .status.error {
+            color: #ff9d9d;
+        }
+
+        .status.success {
+            color: #9ff7c2;
+        }
     </style>
 </head>
 <body>
@@ -97,13 +105,14 @@
             <a href="about.html">About</a>
             <a href="research.html">Research</a>
             <a href="contact.html">Contact</a>
+            <a href="geometry.html">Geometry Viewer</a>
         </nav>
 
         <main>
             <section class="geometry-panel">
                 <h3>Geometry Graph (SVG)</h3>
-                <div id="svgContainer" class="geometry-view" aria-live="polite">Loading graph.svg...</div>
-                <p id="svgStatus" class="status"></p>
+                <div id="svgContainer" class="geometry-view" aria-live="polite">Preparing to load graph.svg...</div>
+                <p id="svgStatus" class="status">Idle.</p>
             </section>
 
             <section class="geometry-panel">
@@ -118,12 +127,20 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td colspan="2">Loading metrics.json...</td>
+                                <td colspan="2">Preparing to load metrics.json...</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <p id="metricsStatus" class="status"></p>
+                <p id="metricsStatus" class="status">Idle.</p>
+            </section>
+
+            <section class="geometry-panel">
+                <h3>Safety Boundaries</h3>
+                <p class="status">
+                    This viewer is read-only and static. It only fetches existing files under
+                    <code>W-DLRA/01_FIELD/geometry/</code> and does not run backend code, Python, or AI runtime services.
+                </p>
             </section>
 
             <section class="geometry-panel">
@@ -141,22 +158,58 @@
     </div>
 
     <script>
+        const GEOMETRY_ROOT = 'W-DLRA/01_FIELD/geometry/';
+
+        function setStatus(element, message, kind) {
+            element.textContent = message;
+            element.classList.remove('error', 'success');
+            if (kind) {
+                element.classList.add(kind);
+            }
+        }
+
+        function isFileProtocol() {
+            return window.location.protocol === 'file:';
+        }
+
+        async function fetchAsset(filename) {
+            const candidates = [
+                GEOMETRY_ROOT + filename,
+                './' + GEOMETRY_ROOT + filename
+            ];
+
+            let lastError = null;
+
+            for (const path of [...new Set(candidates)]) {
+                try {
+                    const response = await fetch(path, { cache: 'no-store' });
+                    if (response.ok) {
+                        return { response, path };
+                    }
+                    lastError = new Error('Could not load ' + filename + ' (' + response.status + ') from ' + path);
+                } catch (error) {
+                    lastError = error;
+                }
+            }
+
+            throw lastError || new Error('Failed to load ' + filename);
+        }
+
         async function loadSvg() {
             const svgContainer = document.getElementById('svgContainer');
             const svgStatus = document.getElementById('svgStatus');
 
-            try {
-                const response = await fetch('W-DLRA/01_FIELD/geometry/graph.svg', { cache: 'no-store' });
-                if (!response.ok) {
-                    throw new Error('Could not load graph.svg (' + response.status + ')');
-                }
+            svgContainer.textContent = 'Loading graph.svg...';
+            setStatus(svgStatus, 'Loading graph.svg...', null);
 
+            try {
+                const { response, path } = await fetchAsset('graph.svg');
                 const svgText = await response.text();
                 svgContainer.innerHTML = svgText;
-                svgStatus.textContent = 'Loaded W-DLRA/01_FIELD/geometry/graph.svg';
+                setStatus(svgStatus, 'Loaded ' + path, 'success');
             } catch (error) {
-                svgContainer.textContent = 'Unable to load graph.svg';
-                svgStatus.textContent = error.message;
+                svgContainer.textContent = 'Unable to load graph.svg.';
+                setStatus(svgStatus, error.message, 'error');
             }
         }
 
@@ -180,12 +233,11 @@
             const tbody = document.querySelector('#metricsTable tbody');
             const metricsStatus = document.getElementById('metricsStatus');
 
-            try {
-                const response = await fetch('W-DLRA/01_FIELD/geometry/metrics.json', { cache: 'no-store' });
-                if (!response.ok) {
-                    throw new Error('Could not load metrics.json (' + response.status + ')');
-                }
+            tbody.innerHTML = '<tr><td colspan="2">Loading metrics.json...</td></tr>';
+            setStatus(metricsStatus, 'Loading metrics.json...', null);
 
+            try {
+                const { response, path } = await fetchAsset('metrics.json');
                 const metrics = await response.json();
                 const rows = flattenMetrics(metrics);
 
@@ -197,18 +249,32 @@
                         .join('');
                 }
 
-                metricsStatus.textContent = 'Loaded W-DLRA/01_FIELD/geometry/metrics.json';
+                setStatus(metricsStatus, 'Loaded ' + path, 'success');
             } catch (error) {
-                tbody.innerHTML = '<tr><td colspan="2">Unable to load metrics.json</td></tr>';
-                metricsStatus.textContent = error.message;
+                tbody.innerHTML = '<tr><td colspan="2">Unable to load metrics.json.</td></tr>';
+                setStatus(metricsStatus, error.message, 'error');
             }
         }
 
         function bindActions() {
             const refreshButton = document.getElementById('refreshButton');
             refreshButton.addEventListener('click', () => {
-                window.location.reload();
+                loadSvg();
+                loadMetrics();
             });
+        }
+
+        if (isFileProtocol()) {
+            setStatus(
+                document.getElementById('svgStatus'),
+                'Tip: when opened directly from disk (file://), browser security may block fetch. Use a static server for local preview.',
+                'error'
+            );
+            setStatus(
+                document.getElementById('metricsStatus'),
+                'Tip: when opened directly from disk (file://), browser security may block fetch. Use a static server for local preview.',
+                'error'
+            );
         }
 
         loadSvg();
