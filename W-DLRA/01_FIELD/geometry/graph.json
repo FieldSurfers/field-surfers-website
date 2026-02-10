@@ -1,0 +1,449 @@
+{
+  "meta": {
+    "source": "observable_trace",
+    "disclaimer": "Derived from prompt/response/events only; no hidden chain-of-thought inference.",
+    "events_count": 2
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "type": "sentence",
+      "text": "A resilient coastal sensor network should use overlapping coverage so one buoy can support another when waves disrupt readings.",
+      "sentence_index": 0
+    },
+    {
+      "id": "n1",
+      "type": "clause",
+      "text": "A resilient coastal sensor network should use overlapping coverage so one buoy can support another when waves disrupt readings.",
+      "sentence_index": 0,
+      "clause_index": 0
+    },
+    {
+      "id": "n2",
+      "type": "keyphrase",
+      "text": "overlapping",
+      "sentence_index": 0,
+      "clause_index": 0
+    },
+    {
+      "id": "n3",
+      "type": "keyphrase",
+      "text": "resilient",
+      "sentence_index": 0,
+      "clause_index": 0
+    },
+    {
+      "id": "n4",
+      "type": "keyphrase",
+      "text": "coverage",
+      "sentence_index": 0,
+      "clause_index": 0
+    },
+    {
+      "id": "n5",
+      "type": "sentence",
+      "text": "It should transmit summaries first, then detailed packets later, because bandwidth can collapse during peak weather.",
+      "sentence_index": 1
+    },
+    {
+      "id": "n6",
+      "type": "clause",
+      "text": "It should transmit summaries first",
+      "sentence_index": 1,
+      "clause_index": 0
+    },
+    {
+      "id": "n7",
+      "type": "keyphrase",
+      "text": "summaries",
+      "sentence_index": 1,
+      "clause_index": 0
+    },
+    {
+      "id": "n8",
+      "type": "keyphrase",
+      "text": "transmit",
+      "sentence_index": 1,
+      "clause_index": 0
+    },
+    {
+      "id": "n9",
+      "type": "keyphrase",
+      "text": "should",
+      "sentence_index": 1,
+      "clause_index": 0
+    },
+    {
+      "id": "n10",
+      "type": "clause",
+      "text": "then detailed packets later",
+      "sentence_index": 1,
+      "clause_index": 1
+    },
+    {
+      "id": "n11",
+      "type": "keyphrase",
+      "text": "detailed",
+      "sentence_index": 1,
+      "clause_index": 1
+    },
+    {
+      "id": "n12",
+      "type": "keyphrase",
+      "text": "packets",
+      "sentence_index": 1,
+      "clause_index": 1
+    },
+    {
+      "id": "n13",
+      "type": "keyphrase",
+      "text": "later",
+      "sentence_index": 1,
+      "clause_index": 1
+    },
+    {
+      "id": "n14",
+      "type": "clause",
+      "text": "bandwidth can collapse during peak weather.",
+      "sentence_index": 1,
+      "clause_index": 2
+    },
+    {
+      "id": "n15",
+      "type": "keyphrase",
+      "text": "bandwidth",
+      "sentence_index": 1,
+      "clause_index": 2
+    },
+    {
+      "id": "n16",
+      "type": "keyphrase",
+      "text": "collapse",
+      "sentence_index": 1,
+      "clause_index": 2
+    },
+    {
+      "id": "n17",
+      "type": "keyphrase",
+      "text": "weather",
+      "sentence_index": 1,
+      "clause_index": 2
+    },
+    {
+      "id": "n18",
+      "type": "sentence",
+      "text": "The system should not trust any single sensor; instead, it should cross-check neighboring measurements and repeat alerts when confidence drops.",
+      "sentence_index": 2
+    },
+    {
+      "id": "n19",
+      "type": "clause",
+      "text": "The system should not trust any single sensor",
+      "sentence_index": 2,
+      "clause_index": 0
+    },
+    {
+      "id": "n20",
+      "type": "keyphrase",
+      "text": "sensor",
+      "sentence_index": 2,
+      "clause_index": 0
+    },
+    {
+      "id": "n21",
+      "type": "keyphrase",
+      "text": "should",
+      "sentence_index": 2,
+      "clause_index": 0
+    },
+    {
+      "id": "n22",
+      "type": "keyphrase",
+      "text": "single",
+      "sentence_index": 2,
+      "clause_index": 0
+    },
+    {
+      "id": "n23",
+      "type": "clause",
+      "text": "instead",
+      "sentence_index": 2,
+      "clause_index": 1
+    },
+    {
+      "id": "n24",
+      "type": "keyphrase",
+      "text": "instead",
+      "sentence_index": 2,
+      "clause_index": 1
+    },
+    {
+      "id": "n25",
+      "type": "clause",
+      "text": "it should cross-check neighboring measurements",
+      "sentence_index": 2,
+      "clause_index": 2
+    },
+    {
+      "id": "n26",
+      "type": "keyphrase",
+      "text": "measurements",
+      "sentence_index": 2,
+      "clause_index": 2
+    },
+    {
+      "id": "n27",
+      "type": "keyphrase",
+      "text": "neighboring",
+      "sentence_index": 2,
+      "clause_index": 2
+    },
+    {
+      "id": "n28",
+      "type": "keyphrase",
+      "text": "should",
+      "sentence_index": 2,
+      "clause_index": 2
+    },
+    {
+      "id": "n29",
+      "type": "clause",
+      "text": "repeat alerts when confidence drops.",
+      "sentence_index": 2,
+      "clause_index": 3
+    },
+    {
+      "id": "n30",
+      "type": "keyphrase",
+      "text": "confidence",
+      "sentence_index": 2,
+      "clause_index": 3
+    },
+    {
+      "id": "n31",
+      "type": "keyphrase",
+      "text": "alerts",
+      "sentence_index": 2,
+      "clause_index": 3
+    },
+    {
+      "id": "n32",
+      "type": "keyphrase",
+      "text": "repeat",
+      "sentence_index": 2,
+      "clause_index": 3
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n1",
+      "relation": "elaborates",
+      "weight": 0.8
+    },
+    {
+      "id": "e1",
+      "source": "n1",
+      "target": "n2",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e2",
+      "source": "n1",
+      "target": "n3",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e3",
+      "source": "n1",
+      "target": "n4",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e4",
+      "source": "n5",
+      "target": "n6",
+      "relation": "elaborates",
+      "weight": 0.8
+    },
+    {
+      "id": "e5",
+      "source": "n6",
+      "target": "n7",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e6",
+      "source": "n6",
+      "target": "n8",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e7",
+      "source": "n6",
+      "target": "n9",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e8",
+      "source": "n5",
+      "target": "n10",
+      "relation": "elaborates",
+      "weight": 0.8
+    },
+    {
+      "id": "e9",
+      "source": "n10",
+      "target": "n11",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e10",
+      "source": "n10",
+      "target": "n12",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e11",
+      "source": "n10",
+      "target": "n13",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e12",
+      "source": "n5",
+      "target": "n14",
+      "relation": "elaborates",
+      "weight": 0.8
+    },
+    {
+      "id": "e13",
+      "source": "n14",
+      "target": "n15",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e14",
+      "source": "n14",
+      "target": "n16",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e15",
+      "source": "n14",
+      "target": "n17",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e16",
+      "source": "n18",
+      "target": "n19",
+      "relation": "elaborates",
+      "weight": 0.8
+    },
+    {
+      "id": "e17",
+      "source": "n19",
+      "target": "n20",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e18",
+      "source": "n19",
+      "target": "n21",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e19",
+      "source": "n19",
+      "target": "n22",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e20",
+      "source": "n18",
+      "target": "n23",
+      "relation": "elaborates",
+      "weight": 0.8
+    },
+    {
+      "id": "e21",
+      "source": "n23",
+      "target": "n24",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e22",
+      "source": "n18",
+      "target": "n25",
+      "relation": "elaborates",
+      "weight": 0.8
+    },
+    {
+      "id": "e23",
+      "source": "n25",
+      "target": "n26",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e24",
+      "source": "n25",
+      "target": "n27",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e25",
+      "source": "n25",
+      "target": "n28",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e26",
+      "source": "n18",
+      "target": "n29",
+      "relation": "elaborates",
+      "weight": 0.8
+    },
+    {
+      "id": "e27",
+      "source": "n29",
+      "target": "n30",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e28",
+      "source": "n29",
+      "target": "n31",
+      "relation": "supports",
+      "weight": 0.6
+    },
+    {
+      "id": "e29",
+      "source": "n29",
+      "target": "n32",
+      "relation": "supports",
+      "weight": 0.6
+    }
+  ]
+}
