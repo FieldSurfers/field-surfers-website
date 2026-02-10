@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="1450" viewBox="0 0 920 1450">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="24" font-family="Arial" font-size="14" fill="#222">W-DLRA Thinking Geometry (observable traces)</text>
+<line x1="210" y1="110" x2="330" y2="110" stroke="#1565c0" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="110" x2="630" y2="110" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="110" x2="630" y2="170" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="110" x2="630" y2="230" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="210" y1="170" x2="330" y2="170" stroke="#1565c0" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="170" x2="630" y2="290" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="170" x2="630" y2="350" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="170" x2="630" y2="410" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="210" y1="170" x2="330" y2="230" stroke="#1565c0" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="230" x2="630" y2="470" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="230" x2="630" y2="530" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="230" x2="630" y2="590" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="210" y1="170" x2="330" y2="290" stroke="#1565c0" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="290" x2="630" y2="650" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="290" x2="630" y2="710" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="290" x2="630" y2="770" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="210" y1="230" x2="330" y2="350" stroke="#1565c0" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="350" x2="630" y2="830" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="350" x2="630" y2="890" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="350" x2="630" y2="950" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="210" y1="230" x2="330" y2="410" stroke="#1565c0" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="410" x2="630" y2="1010" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="210" y1="230" x2="330" y2="470" stroke="#1565c0" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="470" x2="630" y2="1070" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="470" x2="630" y2="1130" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="470" x2="630" y2="1190" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="210" y1="230" x2="330" y2="530" stroke="#1565c0" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="530" x2="630" y2="1250" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="530" x2="630" y2="1310" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<line x1="510" y1="530" x2="630" y2="1370" stroke="#2e7d32" stroke-width="1.2" opacity="0.85" />
+<rect x="30" y="92" width="180" height="36" rx="8" ry="8" fill="#eef7ff" stroke="#888" stroke-width="0.8" />
+<text x="38" y="108" font-family="Arial" font-size="11" fill="#222">A resilient coastal sensor network …</text>
+<text x="38" y="122" font-family="Arial" font-size="9" fill="#555">sentence</text>
+<rect x="330" y="92" width="180" height="36" rx="8" ry="8" fill="#f8fff0" stroke="#888" stroke-width="0.8" />
+<text x="338" y="108" font-family="Arial" font-size="11" fill="#222">A resilient coastal sensor network …</text>
+<text x="338" y="122" font-family="Arial" font-size="9" fill="#555">clause</text>
+<rect x="630" y="92" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="108" font-family="Arial" font-size="11" fill="#222">overlapping</text>
+<text x="638" y="122" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="630" y="152" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="168" font-family="Arial" font-size="11" fill="#222">resilient</text>
+<text x="638" y="182" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="630" y="212" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="228" font-family="Arial" font-size="11" fill="#222">coverage</text>
+<text x="638" y="242" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="30" y="152" width="180" height="36" rx="8" ry="8" fill="#eef7ff" stroke="#888" stroke-width="0.8" />
+<text x="38" y="168" font-family="Arial" font-size="11" fill="#222">It should transmit summaries first,…</text>
+<text x="38" y="182" font-family="Arial" font-size="9" fill="#555">sentence</text>
+<rect x="330" y="152" width="180" height="36" rx="8" ry="8" fill="#f8fff0" stroke="#888" stroke-width="0.8" />
+<text x="338" y="168" font-family="Arial" font-size="11" fill="#222">It should transmit summaries first</text>
+<text x="338" y="182" font-family="Arial" font-size="9" fill="#555">clause</text>
+<rect x="630" y="272" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="288" font-family="Arial" font-size="11" fill="#222">summaries</text>
+<text x="638" y="302" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="630" y="332" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="348" font-family="Arial" font-size="11" fill="#222">transmit</text>
+<text x="638" y="362" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="630" y="392" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="408" font-family="Arial" font-size="11" fill="#222">should</text>
+<text x="638" y="422" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="330" y="212" width="180" height="36" rx="8" ry="8" fill="#f8fff0" stroke="#888" stroke-width="0.8" />
+<text x="338" y="228" font-family="Arial" font-size="11" fill="#222">then detailed packets later</text>
+<text x="338" y="242" font-family="Arial" font-size="9" fill="#555">clause</text>
+<rect x="630" y="452" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="468" font-family="Arial" font-size="11" fill="#222">detailed</text>
+<text x="638" y="482" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="630" y="512" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="528" font-family="Arial" font-size="11" fill="#222">packets</text>
+<text x="638" y="542" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="630" y="572" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="588" font-family="Arial" font-size="11" fill="#222">later</text>
+<text x="638" y="602" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="330" y="272" width="180" height="36" rx="8" ry="8" fill="#f8fff0" stroke="#888" stroke-width="0.8" />
+<text x="338" y="288" font-family="Arial" font-size="11" fill="#222">bandwidth can collapse during peak …</text>
+<text x="338" y="302" font-family="Arial" font-size="9" fill="#555">clause</text>
+<rect x="630" y="632" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="648" font-family="Arial" font-size="11" fill="#222">bandwidth</text>
+<text x="638" y="662" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="630" y="692" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="708" font-family="Arial" font-size="11" fill="#222">collapse</text>
+<text x="638" y="722" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="630" y="752" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="768" font-family="Arial" font-size="11" fill="#222">weather</text>
+<text x="638" y="782" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="30" y="212" width="180" height="36" rx="8" ry="8" fill="#eef7ff" stroke="#888" stroke-width="0.8" />
+<text x="38" y="228" font-family="Arial" font-size="11" fill="#222">The system should not trust any sin…</text>
+<text x="38" y="242" font-family="Arial" font-size="9" fill="#555">sentence</text>
+<rect x="330" y="332" width="180" height="36" rx="8" ry="8" fill="#f8fff0" stroke="#888" stroke-width="0.8" />
+<text x="338" y="348" font-family="Arial" font-size="11" fill="#222">The system should not trust any sin…</text>
+<text x="338" y="362" font-family="Arial" font-size="9" fill="#555">clause</text>
+<rect x="630" y="812" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="828" font-family="Arial" font-size="11" fill="#222">sensor</text>
+<text x="638" y="842" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="630" y="872" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="888" font-family="Arial" font-size="11" fill="#222">should</text>
+<text x="638" y="902" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="630" y="932" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="948" font-family="Arial" font-size="11" fill="#222">single</text>
+<text x="638" y="962" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="330" y="392" width="180" height="36" rx="8" ry="8" fill="#f8fff0" stroke="#888" stroke-width="0.8" />
+<text x="338" y="408" font-family="Arial" font-size="11" fill="#222">instead</text>
+<text x="338" y="422" font-family="Arial" font-size="9" fill="#555">clause</text>
+<rect x="630" y="992" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="1008" font-family="Arial" font-size="11" fill="#222">instead</text>
+<text x="638" y="1022" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="330" y="452" width="180" height="36" rx="8" ry="8" fill="#f8fff0" stroke="#888" stroke-width="0.8" />
+<text x="338" y="468" font-family="Arial" font-size="11" fill="#222">it should cross-check neighboring m…</text>
+<text x="338" y="482" font-family="Arial" font-size="9" fill="#555">clause</text>
+<rect x="630" y="1052" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="1068" font-family="Arial" font-size="11" fill="#222">measurements</text>
+<text x="638" y="1082" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="630" y="1112" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="1128" font-family="Arial" font-size="11" fill="#222">neighboring</text>
+<text x="638" y="1142" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="630" y="1172" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="1188" font-family="Arial" font-size="11" fill="#222">should</text>
+<text x="638" y="1202" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="330" y="512" width="180" height="36" rx="8" ry="8" fill="#f8fff0" stroke="#888" stroke-width="0.8" />
+<text x="338" y="528" font-family="Arial" font-size="11" fill="#222">repeat alerts when confidence drops.</text>
+<text x="338" y="542" font-family="Arial" font-size="9" fill="#555">clause</text>
+<rect x="630" y="1232" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="1248" font-family="Arial" font-size="11" fill="#222">confidence</text>
+<text x="638" y="1262" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="630" y="1292" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="1308" font-family="Arial" font-size="11" fill="#222">alerts</text>
+<text x="638" y="1322" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+<rect x="630" y="1352" width="180" height="36" rx="8" ry="8" fill="#fff8e8" stroke="#888" stroke-width="0.8" />
+<text x="638" y="1368" font-family="Arial" font-size="11" fill="#222">repeat</text>
+<text x="638" y="1382" font-family="Arial" font-size="9" fill="#555">keyphrase</text>
+</svg>

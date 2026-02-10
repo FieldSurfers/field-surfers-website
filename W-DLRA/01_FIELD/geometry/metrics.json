@@ -1,0 +1,22 @@
+{
+  "disclaimer": "Metrics are computed from observable text and optional metadata only.",
+  "counts": {
+    "nodes": 33,
+    "edges": 30,
+    "events": 2,
+    "clauses": 8
+  },
+  "metrics": {
+    "repetition_ratio": 0.0,
+    "contradiction_flags": [],
+    "contradiction_count": 0,
+    "novelty": 0.8837,
+    "compression_ratio": 4.9,
+    "branching_factor": 2.7273,
+    "relation_entropy": 0.8366
+  },
+  "relation_breakdown": {
+    "elaborates": 8,
+    "supports": 22
+  }
+}

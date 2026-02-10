@@ -1,0 +1,11 @@
+prompt:
+Explain how a coastal sensor network can stay reliable during storms.
+
+response:
+A resilient coastal sensor network should use overlapping coverage so one buoy can support another when waves disrupt readings. It should transmit summaries first, then detailed packets later, because bandwidth can collapse during peak weather. The system should not trust any single sensor; instead, it should cross-check neighboring measurements and repeat alerts when confidence drops.
+
+events:
+[
+  {"timestamp": "2026-02-10T14:10:00Z", "tool": "simulator", "status": "ok"},
+  {"timestamp": "2026-02-10T14:10:02Z", "tool": "aggregator", "status": "ok"}
+]
