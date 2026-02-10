@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W-DLRA Geometry Viewer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .geometry-panel {
+            background: rgba(32, 36, 65, 0.95);
+            border-radius: 16px;
+            box-shadow: 0 2px 16px #090c1c88;
+            padding: 24px;
+            margin: 22px 0;
+        }
+
+        .geometry-panel h3 {
+            color: #ffe566;
+            margin-top: 0;
+        }
+
+        .geometry-view {
+            background: rgba(21, 25, 36, 0.95);
+            border: 1px solid #324074;
+            border-radius: 10px;
+            padding: 14px;
+            min-height: 180px;
+            overflow: auto;
+        }
+
+        .geometry-view svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: #d3eafe;
+        }
+
+        th,
+        td {
+            border: 1px solid #324074;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #273259;
+            color: #78e7ff;
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 18px;
+        }
+
+        .button,
+        button {
+            color: #fff;
+            background: #273259;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 16px;
+            text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .button:hover,
+        button:hover {
+            background: #00aaff;
+            color: #23293c;
+        }
+
+        .status {
+            margin-top: 10px;
+            color: #ace8f9;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/logo.png" alt="Field Surfers Logo" class="logo">
+            <h1>W-DLRA Geometry Viewer</h1>
+            <p class="tagline">Latest Thinking Geometry Artifacts</p>
+        </header>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <main>
+            <section class="geometry-panel">
+                <h3>Geometry Graph (SVG)</h3>
+                <div id="svgContainer" class="geometry-view" aria-live="polite">Loading graph.svg...</div>
+                <p id="svgStatus" class="status"></p>
+            </section>
+
+            <section class="geometry-panel">
+                <h3>Geometry Metrics</h3>
+                <div class="geometry-view">
+                    <table id="metricsTable">
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">Loading metrics.json...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p id="metricsStatus" class="status"></p>
+            </section>
+
+            <section class="geometry-panel">
+                <h3>Actions</h3>
+                <div class="actions">
+                    <a class="button" href="W-DLRA/01_FIELD/geometry/graph.json" download>Download raw graph.json</a>
+                    <button type="button" id="refreshButton">Refresh Geometry</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Field Surfers. For the Minds That Fly.</p>
+        </footer>
+    </div>
+
+    <script>
+        async function loadSvg() {
+            const svgContainer = document.getElementById('svgContainer');
+            const svgStatus = document.getElementById('svgStatus');
+
+            try {
+                const response = await fetch('W-DLRA/01_FIELD/geometry/graph.svg', { cache: 'no-store' });
+                if (!response.ok) {
+                    throw new Error('Could not load graph.svg (' + response.status + ')');
+                }
+
+                const svgText = await response.text();
+                svgContainer.innerHTML = svgText;
+                svgStatus.textContent = 'Loaded W-DLRA/01_FIELD/geometry/graph.svg';
+            } catch (error) {
+                svgContainer.textContent = 'Unable to load graph.svg';
+                svgStatus.textContent = error.message;
+            }
+        }
+
+        function flattenMetrics(data, prefix = '') {
+            const rows = [];
+
+            Object.entries(data).forEach(([key, value]) => {
+                const label = prefix ? prefix + '.' + key : key;
+
+                if (value !== null && typeof value === 'object' && !Array.isArray(value)) {
+                    rows.push(...flattenMetrics(value, label));
+                } else {
+                    rows.push({ metric: label, value: Array.isArray(value) ? value.join(', ') : value });
+                }
+            });
+
+            return rows;
+        }
+
+        async function loadMetrics() {
+            const tbody = document.querySelector('#metricsTable tbody');
+            const metricsStatus = document.getElementById('metricsStatus');
+
+            try {
+                const response = await fetch('W-DLRA/01_FIELD/geometry/metrics.json', { cache: 'no-store' });
+                if (!response.ok) {
+                    throw new Error('Could not load metrics.json (' + response.status + ')');
+                }
+
+                const metrics = await response.json();
+                const rows = flattenMetrics(metrics);
+
+                if (rows.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="2">No metrics available.</td></tr>';
+                } else {
+                    tbody.innerHTML = rows
+                        .map((row) => '<tr><td>' + row.metric + '</td><td>' + row.value + '</td></tr>')
+                        .join('');
+                }
+
+                metricsStatus.textContent = 'Loaded W-DLRA/01_FIELD/geometry/metrics.json';
+            } catch (error) {
+                tbody.innerHTML = '<tr><td colspan="2">Unable to load metrics.json</td></tr>';
+                metricsStatus.textContent = error.message;
+            }
+        }
+
+        function bindActions() {
+            const refreshButton = document.getElementById('refreshButton');
+            refreshButton.addEventListener('click', () => {
+                window.location.reload();
+            });
+        }
+
+        loadSvg();
+        loadMetrics();
+        bindActions();
+    </script>
+</body>
+</html>
