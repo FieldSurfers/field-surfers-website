@@ -1,0 +1,11 @@
+{
+  "file": "test_chaos.txt",
+  "status": "VETO_FAIL",
+  "entropy_score": 0.5931818181818183,
+  "entropy_label": "HIGH",
+  "grounded": false,
+  "veto_reason": "ungrounded_phrase:data becomes purple",
+  "torqued": true,
+  "torque_output_preview": "The wings are made of dreams and if we fly high enough the data becomes purple and we can eat the clouds.",
+  "timestamp_utc": "20260210T140354Z"
+}
